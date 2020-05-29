@@ -6,15 +6,14 @@ import numpy as np
 
 import atomic_objects
 from atomic_objects import generate_base_properties, move, crop_entities, replace_colors_in_entities_frame, \
-    replace_color, place_shape, find_components, generate_base_relations, reflect_about_line, rotate_via_reflects, \
-    apply_rotation_group_old, apply_klein_vier_group, apply_rotation_group, rotate_about_point
-from classes import EntityFinder, Selector, ORDINAL_PROPERTIES, Property, Relation, Transformer, Predictor, Entity, \
-    TransformerList
+    replace_color, place_shape, find_components, generate_base_relations, reflect_about_line, \
+    apply_klein_vier_group, apply_rotation_group, rotate_about_point
+from classes import EntityFinder, Selector, ORDINAL_PROPERTIES, Property, Relation, Transformer, Predictor, Entity
 from constants import MAX_SMALL_TIME, MAKE_PROPERTY_LIST, ALLOW_COMPOSITE_SELECTORS, \
     ALL_DIRECTIONS, MAX_PREDICTORS, MAX_LARGE_TIME, MAX_PARTIAL_PREDICTORS, SELECT_NOT_0_NLL, DIM_CHANGE_PENALTY, \
     NEW_COLOR_BONUS, SELECTOR_MAX_NLL_CORRECTION, POINT_PROP_COST, PROPERTY_CONSTRUCTION_COST, \
     SELECTOR_CONSTRUCTION_COST
-from my_utils import filter_unlikelies, combine_sorted_queues, display_case
+from my_utils import filter_unlikelies, combine_sorted_queues
 from nll_functions import combine_property_selector_nll, combine_selector_nll, combine_relation_selector_nll, \
     combine_pair_selector_nll
 

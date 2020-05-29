@@ -4,19 +4,17 @@ import json
 import numpy as np
 from collections import Counter
 from dataclasses import dataclass
-import time
 
 import core_functions
 from core_functions import reset_all
 from atomic_objects import find_components, move, place_shape, replace_color, \
-    replace_colors_in_entities_frame, crop_entities, collision_directions, generate_base_properties, surrounded, \
+    replace_colors_in_entities_frame, crop_entities, collision_directions, surrounded, \
     reflect_about_line, rotate_via_reflects, apply_klein_vier_group, apply_rotation_group_old, rotate_about_point, \
     apply_rotation_group
-from my_utils import combine_sorted_queues, to_tuple, display_case, tuplefy_task, ordinal
+from my_utils import combine_sorted_queues, to_tuple, tuplefy_task, ordinal
 from constants import ALL_DIRECTIONS, TYPES
 from classes import Entity, EntityFinder, OrdinalProperty, Property, Relation, Selector, Transformer, Predictor, \
-    ORDINAL_PROPERTIES, nth_ordered, pick_the_unique_value, SINGLE_VALUE
-import abstraction_and_learning as pst
+    nth_ordered, pick_the_unique_value
 
 color_map = {'black': 0, 'blue': 1, 'red': 2, 'green': 3, 'yellow': 4, 'grey': 5}
 
