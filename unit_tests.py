@@ -16,7 +16,7 @@ from my_utils import combine_sorted_queues, to_tuple, display_case, tuplefy_task
 from constants import ALL_DIRECTIONS, TYPES
 from classes import Entity, EntityFinder, OrdinalProperty, Property, Relation, Selector, Transformer, Predictor, \
     ORDINAL_PROPERTIES, nth_ordered, pick_the_unique_value, SINGLE_VALUE
-import property_select_transform as pst
+import abstraction_and_learning as pst
 
 color_map = {'black': 0, 'blue': 1, 'red': 2, 'green': 3, 'yellow': 4, 'grey': 5}
 

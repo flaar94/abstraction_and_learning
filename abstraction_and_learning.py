@@ -4,7 +4,7 @@ import time
 import logging
 import csv
 
-from atomic_objects import find_components, find_color_entities, rotate_via_reflects
+from atomic_objects import find_components, find_color_entities
 
 from classes import EntityFinder
 from constants import CONSTANT_STRINGS, ALL_DIRECTIONS, MAX_NLL
